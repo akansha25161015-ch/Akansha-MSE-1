@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: black;
+    color: white;
+    font-family: "Mona Sans Thin", Arial, sans-serif;
+
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Choose your color */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;   /* removes underline */
+    color: white;            /* sets text color to white */
+    font-weight: bold;  
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px 0;
+    
+}
+
+.leftSection{
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    display: flex;
+    margin: 0 25px;
+    padding: 60px;
+    
+}
+
+.rightSection{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.rightSection img{
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.aboutSection {
+    font-size: 1rem;
+    margin: 0 25px;
+    padding: 60px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+.aboutSection p{
+    padding-top: 14px;
+}
+
+.aboutSection h2{
+    background-color: #53a7e0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block;
+    color:white;
+    padding: 8px 20px;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+.experiences {
+    font-size: 1rem;
+    margin: 0 25px;
+    padding: 60px;
+    line-height: 1.6;
+    display:flex;
+    
+}
+
+.experiences div h2{
+    display: block;
+    justify-content:  space-around;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+
+
+.experiences dt {
+    display: flex;
+    justify-content: space-between; /* position left, industry right */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.experiences .position {
+    /* left-aligned automatically */
+}
+
+.experiences .industry {
+    text-align: right; /* ensures it stays at right */
+}
+
+.experiences dd {
+   /* margin: 5px 0 15px 0; spacing below description */
+    line-height: 1.5;
+}
+
+.projects{
+    font-size: 1rem;
+    margin: 0 25px;
+    padding: 60px;
+    line-height: 1.6;
+    display:flex;
+    
+}
+
+.projects div h2{
+    display: block;
+    justify-content:  space-around;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+
+
+.projects dt {
+    display: flex;
+    justify-content: space-between; /* position left, industry right */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.projects dd {
+    /* margin: 5px 0 15px 0;  spacing below description */
+    line-height: 1.5;
+}
+
+.connect {
+    font-size: 1rem;
+    margin: 0 25px;
+    padding: 60px;
+    line-height: 1.6;
+}
+
+.connect div h2{
+    display: block;
+    justify-content:  space-around;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.connect p{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.connect form {
+    max-width: 600px;       /* limits width so it doesn't stretch too much */
+    margin: auto;            /* centers the box horizontally */
+    border: 2px solid #ccc;  /* creates the visible border of the box */
+    padding: 60px;           /* space inside the box so content doesn't touch edges */
+    border-radius: 10px;     /* rounded corners of the box */
+    box-shadow: 0 4px 15px rgba(108, 7, 7, 0.1); /* subtle shadow for depth */
+    background-color: #f3c55a;  /* makes box background white so it stands out */
+    color: black;
+}
+
+.experiences, .projects {
+    display: flex;
+    flex-direction: column;  /* forces vertical stacking & equal structure */
+}
+
+h2{
+    background-color: #53a7e0; 
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    color:white;
+    padding: 8px 20px;
+    margin: 0 auto;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1 rem;
+    margin: 0 25px;
+    padding: 20px 25px;
+    line-height: 1.6;
+    
+}
+
+.socialLinks{
+    list-style: none;
+    margin: 0 23px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.socialLinks a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.socialLinks ion-icon[name="logo-linkedin"] {
+  color: #0A66C2; 
+}
+
+.socialLinks ion-icon[name="logo-github"] {
+  color: #171515; 
+}
+
+.socialLinks li {
+  display: inline-block;
+}
+
+.socialLinks a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;              /* circle diameter */
+  height: 40px;
+  background-color: white;  /* circle color */
+  border-radius: 50%;       /* makes it a circle */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+
